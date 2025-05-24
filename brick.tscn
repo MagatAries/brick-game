@@ -1,9 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://d4kwcyo0yp2g5"]
+[gd_scene load_steps=3 format=3 uid="uid://d4kwcyo0yp2g5"]
+
+[ext_resource type="Script" uid="uid://wbytp2yqau6s" path="res://brick.gd" id="1_awxk8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nkspu"]
 size = Vector2(25.5, 12)
 
-[node name="Brick" type="Area2D"]
+[node name="Brick" type="Area2D" groups=["Brick"]]
+script = ExtResource("1_awxk8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_nkspu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

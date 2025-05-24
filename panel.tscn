@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://d0rdb4jtfcbp3"]
+[gd_scene load_steps=3 format=3 uid="uid://d0rdb4jtfcbp3"]
+
+[ext_resource type="Script" uid="uid://tonyibmk013s" path="res://panel.gd" id="1_y26ic"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3owiw"]
 radius = 3.0
 height = 68.0
 
 [node name="Panel" type="CharacterBody2D"]
+script = ExtResource("1_y26ic")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708

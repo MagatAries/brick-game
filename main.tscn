@@ -23,11 +23,11 @@ b = Vector2(270, 0)
 [node name="Panel" parent="." instance=ExtResource("1_h2yge")]
 position = Vector2(135, 430)
 
-[node name="Brick" parent="." instance=ExtResource("3_lquwl")]
-position = Vector2(104, 69)
-
 [node name="Ball" parent="." instance=ExtResource("2_1bvp3")]
 position = Vector2(135, 420)
+
+[node name="Brick" parent="." instance=ExtResource("3_lquwl")]
+position = Vector2(104, 69)
 
 [node name="WallTop" type="StaticBody2D" parent="."]
 

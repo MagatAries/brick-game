@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c0tbog22s6wgx" path="res://ball.gd" id="1_x8fbi"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_x8fbi"]
+rough = true
 bounce = 1.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cbx31"]
@@ -10,7 +11,7 @@ radius = 4.0
 
 [node name="Ball" type="RigidBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_x8fbi")
-gravity_scale = 0.1
+gravity_scale = 0.0
 contact_monitor = true
 max_contacts_reported = 10
 script = ExtResource("1_x8fbi")
